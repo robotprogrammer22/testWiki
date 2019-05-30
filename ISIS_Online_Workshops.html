@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   ISIS Online Workshops - ISIS - Astrogeology Support and Issue Tracking
+  </title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Redmine" name="description"/>
+  <meta content="issue,bug,tracker" name="keywords"/>
+  <meta content="authenticity_token" name="csrf-param"/>
+  <meta content="HJLxggzyK5nJ7UIIt2DdKhRgqfdEW0hp2z5ILm925CbyGDNaZbPvEfyxcp7m9KyZRmArtPKY1W3HNw5PA4e0FA==" name="csrf-token"/>
+  <link href="/fixit/favicon.ico" rel="shortcut icon"/>
+  <link href="/fixit/stylesheets/jquery/jquery-ui-1.11.0.css" media="all" rel="stylesheet"/>
+  <link href="/fixit/themes/astro/stylesheets/application.css" media="all" rel="stylesheet"/>
+  <link href="/fixit/stylesheets/responsive.css" media="all" rel="stylesheet"/>
+  <script src="/fixit/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js">
+  </script>
+  <script src="/fixit/javascripts/application.js">
+  </script>
+  <script src="/fixit/javascripts/responsive.js">
+  </script>
+  <script>
+   //<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+  </script>
+  <script src="/fixit/themes/astro/javascripts/theme.js">
+  </script>
+  <link href="/fixit/plugin_assets/redmine_ldap_sync/stylesheets/ldap_sync.css" media="screen" rel="stylesheet"/>
+  <link href="/fixit/plugin_assets/redmine_agile/stylesheets/redmine_agile.css" media="screen" rel="stylesheet"/>
+  <script src="/fixit/plugin_assets/redmine_checklists/javascripts/checklists.js">
+  </script>
+  <link href="/fixit/plugin_assets/redmine_checklists/stylesheets/checklists.css" media="screen" rel="stylesheet"/>
+  <!-- page specific tags -->
+ </head>
+ <body class="theme-Astro project-isis controller-wiki action-show">
+  <div id="wrapper">
+   <div class="flyout-menu js-flyout-menu">
+    <div class="flyout-menu__search">
+     <form accept-charset="UTF-8" action="/fixit/projects/isis/search" method="get">
+      <input name="utf8" type="hidden" value="✓"/>
+      <input name="wiki_pages" type="hidden" value="1"/>
+      <label class="search-magnifier search-magnifier--flyout" for="flyout-search">
+       ⚲
+      </label>
+      <input class="small js-search-input" id="flyout-search" name="q" placeholder="Search" type="text"/>
+     </form>
+    </div>
+    <h3>
+     Project
+    </h3>
+    <span class="js-project-menu">
+    </span>
+    <h3>
+     General
+    </h3>
+    <span class="js-general-menu">
+    </span>
+    <span class="js-sidebar flyout-menu__sidebar">
+    </span>
+    <h3>
+     Profile
+    </h3>
+    <span class="js-profile-menu">
+    </span>
+   </div>
+   <div id="wrapper2">
+    <div id="wrapper3">
+     <div id="top-menu">
+      <div id="account">
+       <ul>
+        <li>
+         <a class="login" href="/fixit/login">
+          Sign in
+         </a>
+        </li>
+        <li>
+         <a class="login-without-cas" href="/fixit/login_without_cas">
+          Standard Sign In
+         </a>
+        </li>
+       </ul>
+      </div>
+      <ul>
+       <li>
+        <a class="home" href="/fixit/">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="projects" href="/fixit/projects">
+         Projects
+        </a>
+       </li>
+       <li>
+        <a class="help" href="https://www.redmine.org/guide">
+         Help
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div id="header">
+      <a class="mobile-toggle-button js-flyout-menu-toggle-button" href="#">
+      </a>
+      <div id="quick-search">
+       <form accept-charset="UTF-8" action="/fixit/projects/isis/search" method="get">
+        <input name="utf8" type="hidden" value="✓"/>
+        <input name="wiki_pages" type="hidden" value="1"/>
+        <label for="q">
+         <a accesskey="4" href="/fixit/projects/isis/search">
+          Search
+         </a>
+         :
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text"/>
+       </form>
+      </div>
+      <h1>
+       <span class="current-project">
+        ISIS
+       </span>
+      </h1>
+      <div class="tabs" id="main-menu">
+       <ul>
+        <li>
+         <a class="overview" href="/fixit/projects/isis">
+          Overview
+         </a>
+        </li>
+        <li>
+         <a class="activity" href="/fixit/projects/isis/activity">
+          Activity
+         </a>
+        </li>
+        <li>
+         <a class="roadmap" href="/fixit/projects/isis/roadmap">
+          Roadmap
+         </a>
+        </li>
+        <li>
+         <a class="issues" href="/fixit/projects/isis/issues">
+          Issues
+         </a>
+        </li>
+        <li>
+         <a class="news" href="/fixit/projects/isis/news">
+          News
+         </a>
+        </li>
+        <li>
+         <a class="wiki selected" href="/fixit/projects/isis/wiki">
+          Wiki
+         </a>
+        </li>
+        <li>
+         <a class="boards" href="/fixit/projects/isis/boards">
+          Forums
+         </a>
+        </li>
+       </ul>
+       <div class="tabs-buttons" style="display:none;">
+        <button class="tab-left" onclick="moveTabLeft(this); return false;">
+        </button>
+        <button class="tab-right" onclick="moveTabRight(this); return false;">
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="" id="main">
+      <div id="sidebar">
+       <h3>
+        Wiki
+       </h3>
+       <ul>
+        <li>
+         <a href="/fixit/projects/isis/wiki">
+          Start page
+         </a>
+        </li>
+        <li>
+         <a href="/fixit/projects/isis/wiki/index">
+          Index by title
+         </a>
+        </li>
+        <li>
+         <a href="/fixit/projects/isis/wiki/date_index">
+          Index by date
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div id="content">
+       <div class="contextual">
+       </div>
+       <p class="breadcrumb">
+        <a href="/fixit/projects/isis/wiki/Wiki">
+         Wiki
+        </a>
+        »
+       </p>
+       <div class="wiki wiki-page">
+        <a name="ISIS-Online-Workshops">
+        </a>
+        <h1>
+         ISIS Online Workshops
+         <a class="wiki-anchor" href="#ISIS-Online-Workshops">
+          ¶
+         </a>
+        </h1>
+        <ul class="toc">
+         <li>
+          <a href="#ISIS-Online-Workshops">
+           ISIS Online Workshops
+          </a>
+          <ul>
+           <li>
+            <a href="#Welcome-to-the-ISIS-Training-Workshop">
+             Welcome to the ISIS Training Workshop
+            </a>
+           </li>
+           <li>
+            <a href="#Fundamentals">
+             Fundamentals
+            </a>
+           </li>
+           <li>
+            <a href="#General-Image-Processing">
+             General Image Processing
+            </a>
+           </li>
+           <li>
+            <a href="#Cartography">
+             Cartography
+            </a>
+           </li>
+           <li>
+            <a href="#Advanced">
+             Advanced
+            </a>
+           </li>
+           <li>
+            <a href="#Mission-Specific-ISIS3-Processing">
+             Mission Specific ISIS3 Processing
+            </a>
+           </li>
+           <li>
+            <a href="#Programming-in-ISIS3">
+             Programming in ISIS3
+            </a>
+           </li>
+           <li>
+            <a href="#Demonstration-Material">
+             Demonstration Material
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+        <a name="Welcome-to-the-ISIS-Training-Workshop">
+        </a>
+        <h2>
+         Welcome to the ISIS Training Workshop
+         <a class="wiki-anchor" href="#Welcome-to-the-ISIS-Training-Workshop">
+          ¶
+         </a>
+        </h2>
+        <p>
+         The ISIS Training Workshop is a collection of tutorials designed to enable students to learn the basics and develop progressively advanced skills in planetary image processing with ISIS3. Many of the tutorials have interactive exercises where you can visualize what is being described, and some have links to data you can download and practice using in ISIS3. Select a lesson below to start learning ISIS.
+        </p>
+        <p>
+         Notes
+        </p>
+        <ul>
+         <li>
+          ISIS3 is scheduled for regular public releases, please be aware that some of the contents of this workshop might not be consistent with the most recent public release version.
+          <br/>
+         </li>
+         <li>
+          The most obvious inconsistencies would be parameter names and parameter defaults.
+          <br/>
+         </li>
+         <li>
+          As resources allow, we will make our best effort to update the lessons accordingly, the basics and workflow of the lessons will hopefully remain helpful.
+         </li>
+        </ul>
+        <a name="Fundamentals">
+        </a>
+        <h2>
+         Fundamentals
+         <a class="wiki-anchor" href="#Fundamentals">
+          ¶
+         </a>
+        </h2>
+        <ul>
+         <li>
+          <a class="wiki-page" href="Introduction_to_ISIS.html">
+           Introduction to ISIS
+          </a>
+          : Basic introduction to ISIS3, its interfaces, display
+         </li>
+         <li>
+          <a class="wiki-page" href="Locating_and_Ingesting_Image_Data.html">
+           Locating and Ingesting Image Data
+          </a>
+          : Overview of finding image data and importing it into ISIS3
+         </li>
+         <li>
+          <a class="wiki-page" href="ISIS_Cube_Format.html">
+           ISIS Cube Format
+          </a>
+          : Understanding the ISIS3 image cube format
+         </li>
+         <li>
+          <a class="wiki-page" href="Understanding_Bit_Types.html">
+           Understanding Bit Types
+          </a>
+          : Introduction to image data bit types
+         </li>
+         <li>
+          <a class="wiki-page" href="Core_Base_and_Multiplier.html">
+           Core Base and Multiplier
+          </a>
+          : Understanding core base and multiplier ISIS3 cube attributes
+         </li>
+         <li>
+          <a class="wiki-page" href="Special_Pixels.html">
+           Special Pixels
+          </a>
+          : Understanding what special pixels are and how they are used in ISIS3
+         </li>
+        </ul>
+        <a name="General-Image-Processing">
+        </a>
+        <h2>
+         General Image Processing
+         <a class="wiki-anchor" href="#General-Image-Processing">
+          ¶
+         </a>
+        </h2>
+        <ul>
+         <li>
+          <a class="wiki-page" href="The_Power_of_Spatial_Filters.html">
+           The Power of Spatial Filters
+          </a>
+          : Introduction to spatial filters
+         </li>
+         <li>
+          <a class="wiki-page" href="Removing_Striping_Noise_from_Image_Data.html">
+           Removing Striping Noise from Image Data
+          </a>
+          : General destriping procedure
+         </li>
+         <li>
+          <a class="wiki-page" href="General_Utility.html">
+           GeneralUtility-
+           <strong>
+            fx
+           </strong>
+          </a>
+          : Apply arithmetic operations with the
+          <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/fx/fx.html">
+           fx
+          </a>
+          application
+         </li>
+        </ul>
+        <a name="Cartography">
+        </a>
+        <h2>
+         Cartography
+         <a class="wiki-anchor" href="#Cartography">
+          ¶
+         </a>
+        </h2>
+        <ul>
+         <li>
+          <a class="wiki-page" href="SPICE.html">
+           SPICE
+          </a>
+          : Spacecraft &amp; Planetary ephemerides, Instrument C-matrix and Event kernels
+         </li>
+         <li>
+          <a class="wiki-page" href="Camera_Geometry.html">
+           Camera Geometry
+          </a>
+          : ISIS3 applications with access to image geometry
+         </li>
+         <li>
+          <a class="wiki-page" href="Learning_About_Map_Projections.html">
+           Learning About Map Projections
+          </a>
+          : Understanding the types of Projections supported by ISIS3
+         </li>
+        </ul>
+        <a name="Advanced">
+        </a>
+        <h2>
+         Advanced
+         <a class="wiki-anchor" href="#Advanced">
+          ¶
+         </a>
+        </h2>
+        <ul>
+         <li>
+          <a class="wiki-page" href="Image_Registration.html">
+           Image Registration
+          </a>
+          : Overview
+         </li>
+         <li>
+          <a class="wiki-page" href="Automatic_Registration.html">
+           Automatic Registration
+          </a>
+          : Pattern Matching
+         </li>
+         <li>
+          <a class="wiki-page" href="Autoseed.html">
+           Autoseed
+          </a>
+          : Automatic seeding of tiepoints  (Updated)
+         </li>
+         <li>
+          <a class="wiki-page" href="Multi-Instrument_Registration.html">
+           Multi-Instrument Registration
+          </a>
+          : Merging multiple mission data
+         </li>
+        </ul>
+        <a name="Mission-Specific-ISIS3-Processing">
+        </a>
+        <h2>
+         Mission Specific ISIS3 Processing
+         <a class="wiki-anchor" href="#Mission-Specific-ISIS3-Processing">
+          ¶
+         </a>
+        </h2>
+        <ul>
+         <li>
+          <a class="wiki-page" href="Working_with_Mars_Reconnaissance_Orbiter_(MRO)_Data.html">
+           Mars Reconnaissance Orbiter (MRO):
+          </a>
+          <ul>
+           <li>
+            <a class="wiki-page" href="Working_with_Mars_Reconnaissance_Orbiter_HiRISE_Data.html">
+             HiRISE - High Resolution Imaging Science Experiment
+            </a>
+           </li>
+           <li>
+            <a class="wiki-page" href="Working_with_Mars_Reconnaissance_Orbiter_CTX_Data.html">
+             CTX (Context Camera)
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a class="wiki-page" href="Mars_Global_Surveyor_Mission.html">
+           Mars Global Surveyor (MGS):
+          </a>
+          <ul>
+           <li>
+            <a class="wiki-page" href="Working_with_Mars_Orbiter_Camera_Data.html">
+             MOC (Mars Orbiter Camera)
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a class="wiki-page" href="Viking_Orbiter_Mission.html">
+           Mars Viking Orbiter Mission:
+          </a>
+          <ul>
+           <li>
+            <a class="wiki-page" href="Working_with_Mars_Viking_Orbiter_Data.html">
+             Narrow and Wide Angle Camera
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a class="wiki-page" href="CSS.html">
+           Cassini-Huygens Mission:
+          </a>
+          <ul>
+           <li>
+            <a class="wiki-page" href="Working_with_Cassini_ISS_Data.html">
+             ISS (Imaging Science SubSystem)
+            </a>
+           </li>
+           <li>
+            <a class="wiki-page" href="Working_with_Cassini_RADAR.html">
+             RADAR - Imaging, Altimeter, Scatterometer, Radiometer
+            </a>
+           </li>
+           <li>
+            <a class="wiki-page" href="Working_with_Cassini_VIMS.html">
+             VIMS (Visual and Infrared Mapping Spectrometer)
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li>
+          Working with Lunar Reconnaissance Orbiter (LRO)
+          <ul>
+           <li>
+            <a class="wiki-page" href="Working_with_Lunar_Reconnaissance_Orbiter_MiniRF_Data.html">
+             MiniRF - Miniature Radio Frequency instrument
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+        <a name="Programming-in-ISIS3">
+        </a>
+        <h2>
+         Programming in ISIS3
+         <a class="wiki-anchor" href="#Programming-in-ISIS3">
+          ¶
+         </a>
+        </h2>
+        <ul>
+         <li>
+          <a class="wiki-page" href="Exercises_1.html">
+           Exercises 1
+          </a>
+          : Basic ISIS3 programming
+         </li>
+         <li>
+          <a class="wiki-page" href="Exercises_2.html">
+           Exercises 2
+          </a>
+          : Advanced ISIS3 programming exercises
+         </li>
+        </ul>
+        <a name="Demonstration-Material">
+        </a>
+        <h2>
+         Demonstration Material
+         <a class="wiki-anchor" href="#Demonstration-Material">
+          ¶
+         </a>
+        </h2>
+        <ul>
+         <li>
+          <a class="wiki-page" href="ISIS_Demo.html">
+           Demonstrations of ISIS3 Interactive Tools
+          </a>
+         </li>
+         <li>
+          <a class="wiki-page" href="Example_ISIS_Demos.html">
+           Example ISIS Demos
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div style="clear:both;">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="ajax-indicator" style="display:none;">
+     <span>
+      Loading...
+     </span>
+    </div>
+    <div id="ajax-modal" style="display:none;">
+    </div>
+    <div id="footer">
+     <div class="bgl">
+      <div class="bgr">
+       Powered by
+       <a href="https://www.redmine.org/">
+        Redmine
+       </a>
+       © 2006-2016 Jean-Philippe Lang
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
