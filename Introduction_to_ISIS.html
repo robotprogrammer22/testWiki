@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Introduction to ISIS - ISIS - Astrogeology Support and Issue Tracking
+  </title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Redmine" name="description"/>
+  <meta content="issue,bug,tracker" name="keywords"/>
+  <meta content="authenticity_token" name="csrf-param"/>
+  <meta content="vftP20ZEo7yhxDcSsO752Nx6ATQxiiNx+GUj4f886QV0d45i3grEITOYPqi8MMl05/sGn8Yn27rqFG3aWhRKfg==" name="csrf-token"/>
+  <link href="/fixit/favicon.ico" rel="shortcut icon"/>
+  <link href="/fixit/stylesheets/jquery/jquery-ui-1.11.0.css" media="all" rel="stylesheet"/>
+  <link href="/fixit/themes/astro/stylesheets/application.css" media="all" rel="stylesheet"/>
+  <link href="/fixit/stylesheets/responsive.css" media="all" rel="stylesheet"/>
+  <script src="/fixit/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js">
+  </script>
+  <script src="/fixit/javascripts/application.js">
+  </script>
+  <script src="/fixit/javascripts/responsive.js">
+  </script>
+  <script>
+   //<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+  </script>
+  <script src="/fixit/themes/astro/javascripts/theme.js">
+  </script>
+  <link href="/fixit/plugin_assets/redmine_ldap_sync/stylesheets/ldap_sync.css" media="screen" rel="stylesheet"/>
+  <link href="/fixit/plugin_assets/redmine_agile/stylesheets/redmine_agile.css" media="screen" rel="stylesheet"/>
+  <script src="/fixit/plugin_assets/redmine_checklists/javascripts/checklists.js">
+  </script>
+  <link href="/fixit/plugin_assets/redmine_checklists/stylesheets/checklists.css" media="screen" rel="stylesheet"/>
+  <!-- page specific tags -->
+ </head>
+ <body class="theme-Astro project-isis controller-wiki action-show">
+  <div id="wrapper">
+   <div class="flyout-menu js-flyout-menu">
+    <div class="flyout-menu__search">
+     <form accept-charset="UTF-8" action="/fixit/projects/isis/search" method="get">
+      <input name="utf8" type="hidden" value="✓"/>
+      <input name="wiki_pages" type="hidden" value="1"/>
+      <label class="search-magnifier search-magnifier--flyout" for="flyout-search">
+       ⚲
+      </label>
+      <input class="small js-search-input" id="flyout-search" name="q" placeholder="Search" type="text"/>
+     </form>
+    </div>
+    <h3>
+     Project
+    </h3>
+    <span class="js-project-menu">
+    </span>
+    <h3>
+     General
+    </h3>
+    <span class="js-general-menu">
+    </span>
+    <span class="js-sidebar flyout-menu__sidebar">
+    </span>
+    <h3>
+     Profile
+    </h3>
+    <span class="js-profile-menu">
+    </span>
+   </div>
+   <div id="wrapper2">
+    <div id="wrapper3">
+     <div id="top-menu">
+      <div id="account">
+       <ul>
+        <li>
+         <a class="login" href="/fixit/login">
+          Sign in
+         </a>
+        </li>
+        <li>
+         <a class="login-without-cas" href="/fixit/login_without_cas">
+          Standard Sign In
+         </a>
+        </li>
+       </ul>
+      </div>
+      <ul>
+       <li>
+        <a class="home" href="/fixit/">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="projects" href="/fixit/projects">
+         Projects
+        </a>
+       </li>
+       <li>
+        <a class="help" href="https://www.redmine.org/guide">
+         Help
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div id="header">
+      <a class="mobile-toggle-button js-flyout-menu-toggle-button" href="#">
+      </a>
+      <div id="quick-search">
+       <form accept-charset="UTF-8" action="/fixit/projects/isis/search" method="get">
+        <input name="utf8" type="hidden" value="✓"/>
+        <input name="wiki_pages" type="hidden" value="1"/>
+        <label for="q">
+         <a accesskey="4" href="/fixit/projects/isis/search">
+          Search
+         </a>
+         :
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text"/>
+       </form>
+      </div>
+      <h1>
+       <span class="current-project">
+        ISIS
+       </span>
+      </h1>
+      <div class="tabs" id="main-menu">
+       <ul>
+        <li>
+         <a class="overview" href="/fixit/projects/isis">
+          Overview
+         </a>
+        </li>
+        <li>
+         <a class="activity" href="/fixit/projects/isis/activity">
+          Activity
+         </a>
+        </li>
+        <li>
+         <a class="roadmap" href="/fixit/projects/isis/roadmap">
+          Roadmap
+         </a>
+        </li>
+        <li>
+         <a class="issues" href="/fixit/projects/isis/issues">
+          Issues
+         </a>
+        </li>
+        <li>
+         <a class="news" href="/fixit/projects/isis/news">
+          News
+         </a>
+        </li>
+        <li>
+         <a class="wiki selected" href="/fixit/projects/isis/wiki">
+          Wiki
+         </a>
+        </li>
+        <li>
+         <a class="boards" href="/fixit/projects/isis/boards">
+          Forums
+         </a>
+        </li>
+       </ul>
+       <div class="tabs-buttons" style="display:none;">
+        <button class="tab-left" onclick="moveTabLeft(this); return false;">
+        </button>
+        <button class="tab-right" onclick="moveTabRight(this); return false;">
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="" id="main">
+      <div id="sidebar">
+       <h3>
+        Wiki
+       </h3>
+       <ul>
+        <li>
+         <a href="/fixit/projects/isis/wiki">
+          Start page
+         </a>
+        </li>
+        <li>
+         <a href="/fixit/projects/isis/wiki/index">
+          Index by title
+         </a>
+        </li>
+        <li>
+         <a href="/fixit/projects/isis/wiki/date_index">
+          Index by date
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div id="content">
+       <div class="contextual">
+       </div>
+       <p class="breadcrumb">
+        <a href="/fixit/projects/isis/wiki/Wiki">
+         Wiki
+        </a>
+        »
+        <a href="/fixit/projects/isis/wiki/ISIS_Online_Workshops">
+         ISIS Online Workshops
+        </a>
+        »
+       </p>
+       <div class="wiki wiki-page">
+        <a name="Introduction-to-ISIS">
+        </a>
+        <h1>
+         Introduction to ISIS
+         <a class="wiki-anchor" href="#Introduction-to-ISIS">
+          ¶
+         </a>
+        </h1>
+        <hr/>
+        <ul class="toc">
+         <li>
+          <a href="#Introduction-to-ISIS">
+           Introduction to ISIS
+          </a>
+          <ul>
+           <li>
+            <a href="#What-is-ISIS3">
+             What is ISIS3?
+            </a>
+           </li>
+           <li>
+            <a href="#Getting-Started">
+             Getting Started
+            </a>
+           </li>
+           <li>
+            <a href="#Setup-for-LinuxUnix">
+             Setup for Linux/Unix
+            </a>
+            <ul>
+             <li>
+              <a href="#C-Shell">
+               C Shell
+              </a>
+             </li>
+             <li>
+              <a href="#Bourne-Shell">
+               Bourne Shell
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a href="#Getting-Help">
+             Getting Help
+            </a>
+           </li>
+           <li>
+            <a href="#User-Interface-for-ISIS3">
+             User Interface for ISIS3
+            </a>
+           </li>
+           <li>
+            <a href="#Reserved-Command-Line-Arguments">
+             Reserved Command Line Arguments
+            </a>
+           </li>
+           <li>
+            <a href="#Parameter-Command-Line-Arguments">
+             Parameter Command Line Arguments
+            </a>
+           </li>
+           <li>
+            <a href="#Application-Running-Modes">
+             Application Running Modes
+            </a>
+           </li>
+           <li>
+            <a href="#ISIS3-Graphical-Mode">
+             ISIS3 Graphical Mode
+            </a>
+           </li>
+           <li>
+            <a href="#ISIS3-Text-Mode">
+             ISIS3 Text Mode
+            </a>
+           </li>
+           <li>
+            <a href="#Using-qview-to-View-Cubes">
+             Using qview to View Cubes
+            </a>
+            <ul>
+             <li>
+              <a href="#Load-and-Display-a-Multi-Band-Cube">
+               Load and Display a Multi-Band Cube
+              </a>
+              <ul>
+               <li>
+                <a href="#Display-Single-Band-in-Black-and-White">
+                 Display Single Band in Black and White
+                </a>
+               </li>
+               <li>
+                <a href="#Display-a-Red-Green-Blue-Color-Composite">
+                 Display a Red, Green, Blue Color Composite
+                </a>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a href="#Bonus">
+             Bonus
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+        <a name="What-is-ISIS3">
+        </a>
+        <h2>
+         What is ISIS3?
+         <a class="wiki-anchor" href="#What-is-ISIS3">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         ISIS3 is an image processing software package. The focus of the software is to manipulate imagery collected by current and past NASA planetary missions sent to Mars, Jupiter, Saturn, and other solar system bodies.
+        </p>
+        <p>
+         If you're familiar with commercial image processing packages (for example: Adobe Photoshop, PaintShop Pro, Envi, or ERDAS Imagine) you'll recognize many of the standard image processing operations ISIS3 is capable of, such as contrast stretch, image algebra, filters, and statistical analysis.
+        </p>
+        <p>
+         However, the real power of ISIS3 is its unique capabilities for processing data from NASA spacecraft missions such as Voyager, Viking, Galileo, Mars Global Surveyor, and Mars Odyssey. ISIS3 is able to import raw mission data into a usable geospatial image product, and has tools for digital mosaicking of adjacent images, photometric modeling and normalization, removal of systematic noise patterns, overlaying graticules, and numerous other cartographic and scientific analysis functions.
+        </p>
+        <p>
+         The following are just a few examples of how the USGS Astrogeology Research Program has used ISIS3 in our work (links open in a new window):
+        </p>
+        <ul>
+         <li>
+          <strong>
+           Global mosaics
+          </strong>
+          : mosaicking hundreds or thousands of images collected by space exploration missions to create seamless, cartographically accurate, global image maps for use by the planetary science community for research and mapping. See our
+          <a class="external" href="http://www.mapaplanet.com">
+           Map-a-Planet
+          </a>
+          site to view these products.
+         </li>
+        </ul>
+        <p>
+         <img alt="Mars Hemisphere Mosaic" src="attachments/download/1092/Mars_hemi.gif"/>
+        </p>
+        <blockquote>
+         <p>
+          This famous mosaic of the Valles Marineris hemisphere of Mars was created using ISIS3. The mosaic is composed of 102 Viking Orbiter images of Mars, and is projected into point perspective, a view similar to that which one would see from a spacecraft at a distance of 2500 kilometers from the surface of the planet.
+         </p>
+        </blockquote>
+        <ul>
+         <li>
+          <p>
+           <strong>
+            Geologic Mapping
+           </strong>
+           : we create accurate base image maps for geologists to use in creating geologic maps. See our
+           <a class="external" href="http://astrogeology.usgs.gov/Projects/PlanetaryMapping/">
+            Planetary Geologic Mapping Program
+           </a>
+           for more information about this work.
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Scientific Research
+           </strong>
+           : Using ISIS3 to mosaic images of a region of interest to create a scientifically accurate image product, and analyzing the imagery based on spectral, textural, or other attributes. See the following Science Magazine abstract for examples of images from the Mars Exploration Rover Mission Microscopic Image that were processed and analyzed using ISIS3 as part of the scientific research resulting from the mission: Textures of the
+           <a class="external" href="http://astrogeology.usgs.gov/search/details/Mars/MER/ImagerFindings/ScienceMI824/pdf">
+            Soils and Rocks at Gusev Crater from Spirit's Microscopic Imager
+           </a>
+           .
+          </p>
+         </li>
+        </ul>
+        <a name="Getting-Started">
+        </a>
+        <h2>
+         Getting Started
+         <a class="wiki-anchor" href="#Getting-Started">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         To run ISIS3 applications, two things must happen. First, the ISIS3 software has to be installed. The installation procedure will change from time to time so please see the ISIS Download and Installation Guide for the most recent instructions. Second, your environment must be setup so you can execute ISIS3 applications. To set your environment up correctly you should first find out where ISIS3 has been installed. The default location is
+         <em>
+          /usgs/pkgs/isis3/isis
+         </em>
+         .
+        </p>
+        <p>
+         The setup process will modify your environment:
+        </p>
+        <ul>
+         <li>
+          The environment variables PATH and LD_LIBRARY_PATH will be modified to include the ISIS3 directories
+         </li>
+         <li>
+          If not already defined, the environment variable ISISROOT will be set to its default value
+         </li>
+        </ul>
+        <p>
+         The setup for ISIS3 on a "Unix" type system depends on which shell you work under. Follow the instructions below for your shell.
+        </p>
+        <a name="Setup-for-LinuxUnix">
+        </a>
+        <h2>
+         Setup for Linux/Unix
+         <a class="wiki-anchor" href="#Setup-for-LinuxUnix">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <a name="C-Shell">
+        </a>
+        <h3>
+         C Shell
+         <a class="wiki-anchor" href="#C-Shell">
+          ¶
+         </a>
+        </h3>
+        <p>
+         If you are using C Shell (i.e. csh) or some variant (such as tcsh):
+        </p>
+        <p>
+         <strong>
+          Step 1
+         </strong>
+         : If ISIS3 is installed in the default location (/usgs/pkgs/isis3/isis) go to step 2.
+         <br/>
+         If ISIS3 is not installed in the default location you need to set the environment variable ISISROOT.
+         <br/>
+         On the command line use setenv to set the ISISROOT variable to the proper location
+         <br/>
+         (replace the x's and y's with the complete path to where ISIS3 is installed):
+        </p>
+        <pre>setenv ISISROOT /xxxxx/yyyyy/isis
+</pre>
+        <p>
+         <strong>
+          Step 2
+         </strong>
+         : Use the source command to execute the ISIS3 startup script:
+        </p>
+        <pre>source /xxxxx/yyyyy/isis/scripts/isis3Startup.csh
+</pre>
+        <p>
+         If you want ISIS3 to be initialized when you login, place the above commands in your .cshrc file.
+        </p>
+        <a name="Bourne-Shell">
+        </a>
+        <h3>
+         Bourne Shell
+         <a class="wiki-anchor" href="#Bourne-Shell">
+          ¶
+         </a>
+        </h3>
+        <p>
+         If you are using the Bourne shell (i.e. sh) or one of its variants (bash, ksh):
+        </p>
+        <p>
+         <strong>
+          Step 1
+         </strong>
+         : If ISIS3 is installed in the default location (/usgs/pkgs/isis3/isis) go to step 2.
+         <br/>
+         If ISIS3 is not installed in the default location you need to set the environment variable ISISROOT.
+         <br/>
+         On the command line set ISISROOT to the proper location and export the variable using:
+        </p>
+        <pre>ISISROOT=/xxxxx/yyyyy/isis
+export ISISROOT
+</pre>
+        <p>
+         <strong>
+          Step 2
+         </strong>
+         : Use the .(dot) command to execute the ISIS3 startup script:
+        </p>
+        <pre>. /xxxxx/yyyyy/isis/scripts/isis3Startup.sh isis3
+</pre>
+        <p>
+         If you want ISIS3 to be initialized when you login, place the above commands in your .profile file.
+        </p>
+        <p>
+         For those of you who need to work in both version 2 and 3 of ISIS, we suggest you keep them separate by having different terminal windows for each instance. For example, have one xterm with the environment set for version 2 and  another set for version 3.
+        </p>
+        <a name="Getting-Help">
+        </a>
+        <h2>
+         Getting Help
+         <a class="wiki-anchor" href="#Getting-Help">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         The
+         <a class="external" href="https://isis.astrogeology.usgs.gov/fixit/projects/isis">
+          ISIS Support Center
+         </a>
+         is our online knowledge base, bug tracking, announcements, and user support center. If you need help, want to get the latest news, find out about the status of a bug (i.e. software glitch), or just want to learn more and interact with other ISIS3 users, the
+         <a class="external" href="https://isis.astrogeology.usgs.gov/fixit/projects/isis">
+          ISIS Support Center
+         </a>
+         is the place to go! The ISIS Support Center provides access to help on ISIS3.
+        </p>
+        <p>
+         <a class="thumbnail" href="/fixit/attachments/1091" title="IsisSupport.png">
+          <img alt="IsisSupport.png" src="attachments/thumbnail/1091/300.png"/>
+         </a>
+        </p>
+        <p>
+         Here, you can search for questions, tickets and bug reports from other ISIS3 users and the ISIS Support Team -- a post about your subject may already have been answered. If you can't find what you are looking for, you can register for a user name and then submit your question as a Question issue. Please read the
+         <a class="wiki-page" href="Guidelines.html">
+          Guidelines
+         </a>
+         page before registering.
+        </p>
+        <p>
+         To participate in discussions or post issues, it is important that you follow the
+         <a class="wiki-page" href="Guidelines_for_Reporting_Issues.html">
+          Guidelines for Reporting Issues
+         </a>
+         .
+        </p>
+        <a name="User-Interface-for-ISIS3">
+        </a>
+        <h2>
+         User Interface for ISIS3
+         <a class="wiki-anchor" href="#User-Interface-for-ISIS3">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         ISIS3 programs fall into two main groups: interactive and non-interactive. Interactive programs allow you to observe the results of actions you take almost immediately. The main interactive program is
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/qview/qview.html">
+          <strong>
+           qview
+          </strong>
+         </a>
+         , the image display program for ISIS3. However, most programs in ISIS3 fall into the non-interactive group. These programs process the data you supply, usually one or more image files, and write the results to a new file. Some examples are
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/lowpass/lowpass.html">
+          <strong>
+           lowpass
+          </strong>
+         </a>
+         ,
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/ratio/ratio.html">
+          <strong>
+           ratio
+          </strong>
+         </a>
+         and
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/moc2isis/moc2isis.html">
+          <strong>
+           moc2isis
+          </strong>
+         </a>
+         . At this point we will concentrate on the user interface for non-interactive programs because their interfaces are all similar. Interactive programs are somewhat unique, so they each have their own documentation.
+        </p>
+        <p>
+         <a class="thumbnail" href="/fixit/attachments/1090" title="QviewTwoCubes.png">
+          <img alt="QviewTwoCubes.png" src="attachments/thumbnail/1090/300.png"/>
+         </a>
+        </p>
+        <blockquote>
+         <p>
+          <strong>
+           qview
+          </strong>
+          , ISIS3's image display application, is an interactive application]]
+         </p>
+        </blockquote>
+        <p>
+         All ISIS3 programs are launched via the command line. The command line refers to the text typed at the prompt of a terminal window such as xterm, console, or putty, or in a script like cshell, or perl. ISIS3 programs are started by typing the name of the program followed by any arguments. All arguments must be separated from each other by at least one space.
+        </p>
+        <p>
+         Command line arguments are broken into two categories, reserved, and parameter. Reserved arguments always begin with a dash (-) and change major things about how the program runs while parameter arguments supply data to the application and control how it processes that input data to create output data.
+        </p>
+        <a name="Reserved-Command-Line-Arguments">
+        </a>
+        <h2>
+         Reserved Command Line Arguments
+         <a class="wiki-anchor" href="#Reserved-Command-Line-Arguments">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         Reserved arguments all begin with a dash (-), and are not sensitive to case (i.e., -help is the same as -HElp). A list of basic reserved arguments includes:
+        </p>
+        <ul>
+         <li>
+          <strong>
+           -webhelp
+          </strong>
+          Launch a web browser showing the ISIS3 help page for that program. All other arguments will be ignored.
+         </li>
+         <li>
+          <strong>
+           -help
+          </strong>
+          Display a list of the program's parameters showing their default values. For example:
+         </li>
+        </ul>
+        <pre>&gt; equalizer -help
+FROMLIST    = Null
+HOLDLIST    = Null
+TOLIST      = Null
+OUTSTATS    = NULL
+INSTATS     = NULL
+PROCESS     = (*BOTH, CALCULATE, APPLY)
+SOLVEMETHOD = (QRD, *SPARSE)
+ADJUST      = (*BOTH, BRIGHTNESS, CONTRAST, GAIN)
+MINCOUNT    = 1000
+WEIGHT      = FALSE
+PERCENT     = 100.0
+</pre>
+        <ul>
+         <li>
+          <strong>
+           -last
+          </strong>
+          Run the program using the same parameter arguments from the most recent time the program was run. This does not include any reserved arguments.
+         </li>
+         <li>
+          <strong>
+           -restore=filename
+          </strong>
+          Run the program using the arguments from the file specified in filename.
+         </li>
+        </ul>
+        <p>
+         Reserved arguments come in two forms, solitary keyword or keyword value pair. Solitary keywords tell the program to perform some special action such as the -help keyword above. Keyword value pairs also tell the program to perform some special action, but use additional information for that action like in the -restore argument above. The keyword and value must be separated from each other with an equals sign (=). The equals sign may have spaces on either or both sides of it.
+        </p>
+        <a name="Parameter-Command-Line-Arguments">
+        </a>
+        <h2>
+         Parameter Command Line Arguments
+         <a class="wiki-anchor" href="#Parameter-Command-Line-Arguments">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         Parameter arguments are always made up of keyword value pairs. The keyword and value are separated by an equals sign just like reserved arguments, but they begin with an alphabetic letter instead of a dash. Parameters control what input data to use, what settings to use to process that input data, and where to put the output data. There are six different types of parameters:
+        </p>
+        <ul>
+         <li>
+          Cube file names -  A cube file name is the location on disk of an ISIS3 cube. It can be either the input to this program or where to place the output. Input cubes, must be the output from some other ISIS3 program. Most programs can process cubes from ISIS2, but some information may be interpreted differently. Output cubes, will always be the location to place processed results from the application. When entering the filename of a cube it is not necessary to enter the .cub extension. It will be added for you if you do not type it.
+         </li>
+        </ul>
+        <pre>from=r0700563_lev1.cub
+to= f431a62
+</pre>
+        <ul>
+         <li>
+          Data file names - A data file name is the location on disk of a file which is not an ISIS3 cube. This includes input files from missions such as Mars Global Surveyor or Viking, and output files such as that produced by the program
+          <strong>
+           stats
+          </strong>
+          or
+          <strong>
+           isis2std
+          </strong>
+          .
+         </li>
+        </ul>
+        <pre>to=myStatistic.dat
+</pre>
+        <ul>
+         <li>
+          Floating point numbers - Floating point numbers are numeric values with a whole part and/or a fractional part. Parameters with this type can be given values like 1.0, 0.7823, 127 or 0.31416E+1
+         </li>
+        </ul>
+        <pre>radius=317.681
+</pre>
+        <ul>
+         <li>
+          Integers - Integer numbers have only a whole part. Parameters of this type can be given values like 0, 2, -18223 or 255.
+         </li>
+        </ul>
+        <pre>lines=1024
+</pre>
+        <ul>
+         <li>
+          Boolean - Boolean parameters are used as flags to indicate true or false. The ISIS3 user interface allows true values to be represented by True, T, Yes or Y. False values can be False, F, No or N. Any mixture of upper and lower case letters is allowed. The name of the parameter for boolean's is usually a question such as USEDEM. This should be read as "Do you want the program to use a DEM when it processes the input?"
+         </li>
+        </ul>
+        <pre>CREATESPECIAL=FALSE
+emission=true
+</pre>
+        <ul>
+         <li>
+          String - A string is a simple sequence of printable characters. For example "MARS", "BiLinear" or "The quick brown fox."
+         </li>
+        </ul>
+        <pre>bittype=real
+</pre>
+        <a name="Application-Running-Modes">
+        </a>
+        <h2>
+         Application Running Modes
+         <a class="wiki-anchor" href="#Application-Running-Modes">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         All non-interactive programs can run in one of two modes, text mode (runs without launching a window) or graphical mode (launches a window for providing parameters). Which mode the program runs in depends on what arguments you supplied on the command line. If any parameter arguments are present on the command line, the program will run in text mode unless explicitly overridden using the reserved argument -gui.
+        </p>
+        <a name="ISIS3-Graphical-Mode">
+        </a>
+        <h2>
+         ISIS3 Graphical Mode
+         <a class="wiki-anchor" href="#ISIS3-Graphical-Mode">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         To run an ISIS3 program in graphical mode, simply type the name of the program followed by the Enter key. The program will display a window that allows you to set parameters for the program, start/stop running the algorithm on the data, observe the current status of the program, and see any logged information.
+        </p>
+        <p>
+         As mentioned earlier, if there are any parameter arguments on the command line the program will run in text mode. You can override this feature by supplying the -gui reserved argument on the command line. The gui flag refers to the term Graphical User Interface (or, simply GUI, pronounced ''gooey''), and forces the application to run in graphical mode. The program will then load any parameter arguments and launch the program in graphical mode instead of text mode. The following command will launch the
+         <strong>
+          lowpass
+         </strong>
+         program in graphical mode with the parameters set according to what was on the command line:
+        </p>
+        <pre>lowpass from=f431a63.cub to=f431a63_lpf3x3.cub lines=3 samples=3 -gui
+</pre>
+        <p>
+         <a class="thumbnail" href="/fixit/attachments/1089" title="LowpassScreenShot1.png">
+          <img alt="LowpassScreenShot1.png" src="attachments/thumbnail/1089/300.png"/>
+         </a>
+        </p>
+        <blockquote>
+         <p>
+          <strong>
+           lowpass, regular graphical mode
+          </strong>
+          <br/>
+          when run with no parameters, lowpass opens in graphical mode to let you fill in the parameters
+         </p>
+        </blockquote>
+        <p>
+         <a class="thumbnail" href="/fixit/attachments/1088" title="LowpassScreenShot2.png">
+          <img alt="LowpassScreenShot2.png" src="attachments/thumbnail/1088/300.png"/>
+         </a>
+        </p>
+        <blockquote>
+         <p>
+          <strong>
+           lowpass, forced into graphical mode with -gui
+          </strong>
+          <br/>
+          here, lowpass was run with parameters, but by using the -gui flag, lowpass opens in graphical mode and automatically fills in values for any parameters you passed it on the command line
+         </p>
+        </blockquote>
+        <p>
+         As you can see the parameter arguments on the command line were used to set the values for the
+         <strong>
+          lowpass
+         </strong>
+         application, and the -gui reserved argument caused the program to run in graphical mode instead of in text mode.
+        </p>
+        <a name="ISIS3-Text-Mode">
+        </a>
+        <h2>
+         ISIS3 Text Mode
+         <a class="wiki-anchor" href="#ISIS3-Text-Mode">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         For text mode, ISIS3 programs get all their parameters from you via the command line arguments, process the data, and then exit. Programs may or may not show a status message and results on the terminal window. While running, an application that encounters an error will show the error message on the terminal window and then exit. It is then up to you to correct the error and try again.
+        </p>
+        <p>
+         <a class="thumbnail" href="/fixit/attachments/1087" title="LowpassScreenShot3.png">
+          <img alt="LowpassScreenShot3.png" src="attachments/thumbnail/1087/300.png"/>
+         </a>
+        </p>
+        <blockquote>
+         <p>
+          <strong>
+           lowpass running in text mode
+          </strong>
+          <br/>
+          We ran the
+          <strong>
+           lowpass
+          </strong>
+          application, passing all the parameters along on the command line. Oops! We spelled "samples" wrong, but
+          <strong>
+           lowpass
+          </strong>
+          gives us a handy error message to let us know what the problem was. We run it again, it shows us its status as it runs, and returns us to the command line prompt when it's finished.
+         </p>
+        </blockquote>
+        <a name="Using-qview-to-View-Cubes">
+        </a>
+        <h2>
+         Using qview to View Cubes
+         <a class="wiki-anchor" href="#Using-qview-to-View-Cubes">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         Naturally, one of the first things anyone wants to do when they get their hands on image data is look at it! The
+         <strong>
+          qview
+         </strong>
+         application is the image viewer for ISIS3.
+         <strong>
+          qview
+         </strong>
+         has a number of tools to let you zoom in and out, change the contrast, choose color combinations, compare, and otherwise interact with and look at your images. We'll talk about some of these tools in detail later. For now, let's just learn how to open an image in
+         <strong>
+          qview
+         </strong>
+         .
+        </p>
+        <ol>
+         <li>
+          <p>
+           Run
+           <strong>
+            qview
+           </strong>
+           by typing qview on the command line. The
+           <strong>
+            qview
+           </strong>
+           viewer application window will open.
+          </p>
+         </li>
+         <li>
+          <p>
+           Select Open... from the File menu. A dialog box labeled "Open" will appear. Images in the native ISIS3 format are called ISIS3 cubes or simply cubes.
+          </p>
+          <ul>
+           <li>
+            Find the directory containing your ISIS3 cubes
+           </li>
+           <li>
+            Select one or more to open
+           </li>
+           <li>
+            Click the Open button
+           </li>
+          </ul>
+         </li>
+         <li>
+          <p>
+           Your image(s) will appear in the
+           <strong>
+            qview
+           </strong>
+           window!
+          </p>
+         </li>
+        </ol>
+        <a name="Load-and-Display-a-Multi-Band-Cube">
+        </a>
+        <h3>
+         Load and Display a Multi-Band Cube
+         <a class="wiki-anchor" href="#Load-and-Display-a-Multi-Band-Cube">
+          ¶
+         </a>
+        </h3>
+        <p>
+         <strong>
+          qview
+         </strong>
+         will load an entire multi-band cube into memory.
+        </p>
+        <a name="Display-Single-Band-in-Black-and-White">
+        </a>
+        <h4>
+         Display Single Band in Black and White
+         <a class="wiki-anchor" href="#Display-Single-Band-in-Black-and-White">
+          ¶
+         </a>
+        </h4>
+        <p>
+         Each band can be selected to view as follows:
+        </p>
+        <p>
+         <img alt="Black and White" src="attachments/download/1086/Qview_vims_singleband.png"/>
+        </p>
+        <a name="Display-a-Red-Green-Blue-Color-Composite">
+        </a>
+        <h4>
+         Display a Red, Green, Blue Color Composite
+         <a class="wiki-anchor" href="#Display-a-Red-Green-Blue-Color-Composite">
+          ¶
+         </a>
+        </h4>
+        <p>
+         <img alt="Color Composite" src="attachments/download/1085/Qview_vims_bandrgb.png"/>
+        </p>
+        <a name="Bonus">
+        </a>
+        <h2>
+         Bonus
+         <a class="wiki-anchor" href="#Bonus">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         Now that you know how to run ISIS3 programs go experiment with some of the basic ones like
+         <strong>
+          stats
+         </strong>
+         ,
+         <strong>
+          hist
+         </strong>
+         or
+         <strong>
+          mirror
+         </strong>
+         .
+        </p>
+        <p>
+         Download the ISIS3 cube
+         <a class="attachment" href="/fixit/attachments/download/1084/Intro2isis.cub.gz">
+          Intro2isis.cub.gz
+         </a>
+         - the cube is compressed in a GZIP archive file. Use gunzip to uncompress the cube. The filename of the cube is Intro2isis.cub.
+        </p>
+        <p>
+         Run each of the following applications, using intro2isis.cub as your input '(FROM)' file. Try running in both the GUI and command line modes. The following links to application documentation may be helpful:
+        </p>
+        <ul>
+         <li>
+          <p>
+           <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/stats/stats.html">
+            <strong>
+             stats
+            </strong>
+           </a>
+           : The
+           <strong>
+            stats
+           </strong>
+           application computes statistics (such as average, mode, minimum, maximum, etc.) for the pixels in a single band. To choose a band other than the default (band 1) in GUI mode, click the arrow to the right of the "From" field and choose "Change attributes..." from the menu. You can then enter a different band number.
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/hist/hist.html">
+            <strong>
+             hist
+            </strong>
+           </a>
+           : The
+           <strong>
+            hist
+           </strong>
+           application creates a tabular representation of the histogram of a single band in a cube. Like stats, the default band is band 1 and can be changed in the file attributes in the GUI.
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/mirror/mirror.html">
+            <strong>
+             mirror
+            </strong>
+           </a>
+           : The
+           <strong>
+            mirror
+           </strong>
+           application flips a cube from left to right (making an output cube that looks like the mirror-image of the input cube). Make sure your output '(TO)' filename is different than your input '(FROM)' filename!
+          </p>
+         </li>
+        </ul>
+        <p>
+         After running the
+         <strong>
+          mirror
+         </strong>
+         application, open both the input cube (intro2isis.cub) and output cube in
+         <strong>
+          qview
+         </strong>
+         to see the results!
+        </p>
+       </div>
+       <div class="attachments">
+        <div class="contextual">
+        </div>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1084/Intro2isis.cub.gz">
+          Intro2isis.cub.gz
+         </a>
+         <span class="size">
+          (380 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 01:45 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1085/Qview_vims_bandrgb.png">
+          Qview_vims_bandrgb.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/1085/Qview_vims_bandrgb.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (147 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 01:53 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1086/Qview_vims_singleband.png">
+          Qview_vims_singleband.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/1086/Qview_vims_singleband.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (90.9 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 01:53 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1087/LowpassScreenShot3.png">
+          LowpassScreenShot3.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/1087/LowpassScreenShot3.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (20.7 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 01:55 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1088/LowpassScreenShot2.png">
+          LowpassScreenShot2.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/1088/LowpassScreenShot2.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (26.8 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 01:59 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1089/LowpassScreenShot1.png">
+          LowpassScreenShot1.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/1089/LowpassScreenShot1.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (26 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 01:59 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1090/QviewTwoCubes.png">
+          QviewTwoCubes.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/1090/QviewTwoCubes.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (85 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 02:07 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1091/IsisSupport.png">
+          IsisSupport.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/1091/IsisSupport.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (727 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 02:10 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/1092/Mars_hemi.gif">
+          Mars_hemi.gif
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/1092/Mars_hemi.gif" title="View">
+          View
+         </a>
+         <span class="size">
+          (40.8 KB)
+         </span>
+         <span class="author">
+          Ian Humphrey, 2016-06-01 02:20 PM
+         </span>
+        </p>
+       </div>
+       <div style="clear:both;">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="ajax-indicator" style="display:none;">
+     <span>
+      Loading...
+     </span>
+    </div>
+    <div id="ajax-modal" style="display:none;">
+    </div>
+    <div id="footer">
+     <div class="bgl">
+      <div class="bgr">
+       Powered by
+       <a href="https://www.redmine.org/">
+        Redmine
+       </a>
+       © 2006-2016 Jean-Philippe Lang
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
