@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Camera Geometry - ISIS - Astrogeology Support and Issue Tracking
+  </title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Redmine" name="description"/>
+  <meta content="issue,bug,tracker" name="keywords"/>
+  <meta content="authenticity_token" name="csrf-param"/>
+  <meta content="qFwpWRvzCvt8Q9BiqjtB6gCvcRKGo3qxqufxVTajgQxAqiPDkQw1v88C/sDTeFIWQ/oSPxKICLjoPFfgeBMyiw==" name="csrf-token"/>
+  <link href="/fixit/favicon.ico" rel="shortcut icon"/>
+  <link href="/fixit/stylesheets/jquery/jquery-ui-1.11.0.css" media="all" rel="stylesheet"/>
+  <link href="/fixit/themes/astro/stylesheets/application.css" media="all" rel="stylesheet"/>
+  <link href="/fixit/stylesheets/responsive.css" media="all" rel="stylesheet"/>
+  <script src="/fixit/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js">
+  </script>
+  <script src="/fixit/javascripts/application.js">
+  </script>
+  <script src="/fixit/javascripts/responsive.js">
+  </script>
+  <script>
+   //<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+  </script>
+  <script src="/fixit/themes/astro/javascripts/theme.js">
+  </script>
+  <link href="/fixit/plugin_assets/redmine_ldap_sync/stylesheets/ldap_sync.css" media="screen" rel="stylesheet"/>
+  <link href="/fixit/plugin_assets/redmine_agile/stylesheets/redmine_agile.css" media="screen" rel="stylesheet"/>
+  <script src="/fixit/plugin_assets/redmine_checklists/javascripts/checklists.js">
+  </script>
+  <link href="/fixit/plugin_assets/redmine_checklists/stylesheets/checklists.css" media="screen" rel="stylesheet"/>
+  <!-- page specific tags -->
+ </head>
+ <body class="theme-Astro project-isis controller-wiki action-show">
+  <div id="wrapper">
+   <div class="flyout-menu js-flyout-menu">
+    <div class="flyout-menu__search">
+     <form accept-charset="UTF-8" action="/fixit/projects/isis/search" method="get">
+      <input name="utf8" type="hidden" value="✓"/>
+      <input name="wiki_pages" type="hidden" value="1"/>
+      <label class="search-magnifier search-magnifier--flyout" for="flyout-search">
+       ⚲
+      </label>
+      <input class="small js-search-input" id="flyout-search" name="q" placeholder="Search" type="text"/>
+     </form>
+    </div>
+    <h3>
+     Project
+    </h3>
+    <span class="js-project-menu">
+    </span>
+    <h3>
+     General
+    </h3>
+    <span class="js-general-menu">
+    </span>
+    <span class="js-sidebar flyout-menu__sidebar">
+    </span>
+    <h3>
+     Profile
+    </h3>
+    <span class="js-profile-menu">
+    </span>
+   </div>
+   <div id="wrapper2">
+    <div id="wrapper3">
+     <div id="top-menu">
+      <div id="account">
+       <ul>
+        <li>
+         <a class="login" href="/fixit/login">
+          Sign in
+         </a>
+        </li>
+        <li>
+         <a class="login-without-cas" href="/fixit/login_without_cas">
+          Standard Sign In
+         </a>
+        </li>
+       </ul>
+      </div>
+      <ul>
+       <li>
+        <a class="home" href="/fixit/">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="projects" href="/fixit/projects">
+         Projects
+        </a>
+       </li>
+       <li>
+        <a class="help" href="https://www.redmine.org/guide">
+         Help
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div id="header">
+      <a class="mobile-toggle-button js-flyout-menu-toggle-button" href="#">
+      </a>
+      <div id="quick-search">
+       <form accept-charset="UTF-8" action="/fixit/projects/isis/search" method="get">
+        <input name="utf8" type="hidden" value="✓"/>
+        <input name="wiki_pages" type="hidden" value="1"/>
+        <label for="q">
+         <a accesskey="4" href="/fixit/projects/isis/search">
+          Search
+         </a>
+         :
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text"/>
+       </form>
+      </div>
+      <h1>
+       <span class="current-project">
+        ISIS
+       </span>
+      </h1>
+      <div class="tabs" id="main-menu">
+       <ul>
+        <li>
+         <a class="overview" href="/fixit/projects/isis">
+          Overview
+         </a>
+        </li>
+        <li>
+         <a class="activity" href="/fixit/projects/isis/activity">
+          Activity
+         </a>
+        </li>
+        <li>
+         <a class="roadmap" href="/fixit/projects/isis/roadmap">
+          Roadmap
+         </a>
+        </li>
+        <li>
+         <a class="issues" href="/fixit/projects/isis/issues">
+          Issues
+         </a>
+        </li>
+        <li>
+         <a class="news" href="/fixit/projects/isis/news">
+          News
+         </a>
+        </li>
+        <li>
+         <a class="wiki selected" href="/fixit/projects/isis/wiki">
+          Wiki
+         </a>
+        </li>
+        <li>
+         <a class="boards" href="/fixit/projects/isis/boards">
+          Forums
+         </a>
+        </li>
+       </ul>
+       <div class="tabs-buttons" style="display:none;">
+        <button class="tab-left" onclick="moveTabLeft(this); return false;">
+        </button>
+        <button class="tab-right" onclick="moveTabRight(this); return false;">
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="" id="main">
+      <div id="sidebar">
+       <h3>
+        Wiki
+       </h3>
+       <ul>
+        <li>
+         <a href="/fixit/projects/isis/wiki">
+          Start page
+         </a>
+        </li>
+        <li>
+         <a href="/fixit/projects/isis/wiki/index">
+          Index by title
+         </a>
+        </li>
+        <li>
+         <a href="/fixit/projects/isis/wiki/date_index">
+          Index by date
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div id="content">
+       <div class="contextual">
+       </div>
+       <p class="breadcrumb">
+        <a href="/fixit/projects/isis/wiki/Wiki">
+         Wiki
+        </a>
+        »
+        <a href="/fixit/projects/isis/wiki/ISIS_Online_Workshops">
+         ISIS Online Workshops
+        </a>
+        »
+       </p>
+       <div class="wiki wiki-page">
+        <a name="Camera-Geometry">
+        </a>
+        <h1>
+         Camera Geometry
+         <a class="wiki-anchor" href="#Camera-Geometry">
+          ¶
+         </a>
+        </h1>
+        <hr/>
+        <ul class="toc">
+         <li>
+          <a href="#Camera-Geometry">
+           Camera Geometry
+          </a>
+          <ul>
+           <li>
+            <a href="#Introduction">
+             Introduction
+            </a>
+           </li>
+           <li>
+            <a href="#Camera-Geometry-2">
+             Camera Geometry
+            </a>
+           </li>
+           <li>
+            <a href="#Camera-Information-Applications">
+             Camera Information Applications
+            </a>
+            <ul>
+             <li>
+              <a href="#Camstats">
+               Camstats
+              </a>
+             </li>
+             <li>
+              <a href="#Mosrange">
+               Mosrange
+              </a>
+             </li>
+             <li>
+              <a href="#Campt">
+               Campt
+              </a>
+             </li>
+             <li>
+              <a href="#Phocube">
+               Phocube
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+        </ul>
+        <a name="Introduction">
+        </a>
+        <h2>
+         Introduction
+         <a class="wiki-anchor" href="#Introduction">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         In order to access and view the geometry for an ISIS3 image cube [raw instrument camera cube, (i.e., PDS-EDR)], the application
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/spiceinit/spiceinit.html">
+          <strong>
+           spiceinit
+          </strong>
+         </a>
+         must be
+         <strong>
+          successfully
+         </strong>
+         applied to the cube.  Once
+         <strong>
+          spiceinit
+         </strong>
+         has been applied, there are a number of applications that will be able to compute and output statistics about your image based on the raw
+         <strong>
+          Camera Geometry
+         </strong>
+         .
+        </p>
+        <a name="Camera-Geometry-2">
+        </a>
+        <h2>
+         Camera Geometry
+         <a class="wiki-anchor" href="#Camera-Geometry-2">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <p>
+         <strong>
+          Camera Geometry
+         </strong>
+         refers to the viewing geometry of an observation.  It also implies a 'non-projected' cube (sometimes referred to as a Level1, though it does not require radiometric calibration).  It is
+         <strong>
+          IMPORTANT
+         </strong>
+         to note that within the ISIS3 environment, unless allowed to be otherwise specified,
+         <strong>
+          ALL
+         </strong>
+         applications default (for input and output) to the following geometric reference (regardless of target body):
+        </p>
+        <ul>
+         <li>
+          <strong>
+           Longitude_Domain = 360
+          </strong>
+          [Longitudes will be reported in the range of 0 to 360 degrees (not -180 to 180)]
+         </li>
+         <li>
+          <strong>
+           Latitude_System = Ocentric
+          </strong>
+          [Versus Ographic; Note: there is not difference for a spherical body]
+         </li>
+         <li>
+          <strong>
+           Longitude Direction = East
+          </strong>
+          [Longitude values increase to the east]
+         </li>
+        </ul>
+        <p>
+         Definitions for the geometric reference terms can be found in
+         <a class="wiki-page" href="Learning_About_Map_Projections.html">
+          Learning About Map Projections
+         </a>
+        </p>
+        <a name="Camera-Information-Applications">
+        </a>
+        <h2>
+         Camera Information Applications
+         <a class="wiki-anchor" href="#Camera-Information-Applications">
+          ¶
+         </a>
+        </h2>
+        <hr/>
+        <a name="Camstats">
+        </a>
+        <h3>
+         <strong>
+          Camstats
+         </strong>
+         <a class="wiki-anchor" href="#Camstats">
+          ¶
+         </a>
+        </h3>
+        <p>
+         For a given image cube, the application
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/camstats/camstats.html">
+          <strong>
+           camstats
+          </strong>
+         </a>
+         will report Minimum, Maximum, Average and Standard Deviation for the following:
+        </p>
+        <p>
+         <strong>
+          Geometric Information
+         </strong>
+        </p>
+        <ul>
+         <li>
+          Latitude
+         </li>
+         <li>
+          Longitude
+         </li>
+         <li>
+          Resolution, LineResolution, SampleResolution
+         </li>
+         <li>
+          AspectRatio
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Photometric Information
+         </strong>
+        </p>
+        <ul>
+         <li>
+          Phase Angle
+         </li>
+         <li>
+          Emission Angle
+         </li>
+         <li>
+          Incidence Angle
+         </li>
+         <li>
+          LocalSolarTime
+         </li>
+         <li>
+          NorthAzimuth
+         </li>
+        </ul>
+        <p>
+         Example (not all parameters shown):
+        </p>
+        <pre>camstats from=xxxx.cub linc=1 sinc=1
+</pre>
+        <p>
+         <strong>
+          NOTE:
+         </strong>
+         The
+         <em>
+          linc
+         </em>
+         and
+         <em>
+          sinc
+         </em>
+         parameters default to 1.  For larger pixel size images, such as HiRISE or CTX data, setting the
+         <em>
+          linc
+         </em>
+         and
+         <em>
+          sinc
+         </em>
+         values to higher values (10, 100) would help the application to run faster.  Set with care knowing that the application is literally skipping line/sample data to retrieve SPICE information.
+        </p>
+        <ul>
+         <li>
+          <strong>
+           camstats
+          </strong>
+          supplies useful information that can be considered and applied when map projecting images (Level2 processing).
+         </li>
+        </ul>
+        <a name="Mosrange">
+        </a>
+        <h3>
+         <strong>
+          Mosrange
+         </strong>
+         <a class="wiki-anchor" href="#Mosrange">
+          ¶
+         </a>
+        </h3>
+        <p>
+         Given a list of multiple raw image cubes, the application
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/mosrange/mosrange.html">
+          <strong>
+           mosrange
+          </strong>
+         </a>
+         computes the range of latitude/longitude and resolution statistics for all images given.
+        </p>
+        <p>
+         Example (not all parameters shown):
+        </p>
+        <pre>mosrange fromlist=list_of_lev0_w_spice.lis to=output_map_information.map projection=Equirectangular
+</pre>
+        <ul>
+         <li>
+          <p>
+           This is one application that allows the user to specify output latitude type, longitude direction and longitude domain.
+          </p>
+         </li>
+         <li>
+          <p>
+           Knowing the information about your set of images at this point is useful, especially if the goal is to generate a mosaic.  The output can be used later in defining the desired output map projection in Level 2 processing.
+          </p>
+         </li>
+        </ul>
+        <a name="Campt">
+        </a>
+        <h3>
+         <strong>
+          Campt
+         </strong>
+         <a class="wiki-anchor" href="#Campt">
+          ¶
+         </a>
+        </h3>
+        <p>
+         The application
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/campt/campt.html">
+          <strong>
+           campt
+          </strong>
+         </a>
+         will supply geometric and photometric information based on a
+         <em>
+          single
+         </em>
+         latitude/longitude value (remember the raw camera geometry defaults when entering values) or a
+         <em>
+          single
+         </em>
+         line/sample coordinate of an image cube.
+        </p>
+        <p>
+         <strong>
+          Geometric Information
+         </strong>
+        </p>
+        <ul>
+         <li>
+          Latitude
+         </li>
+         <li>
+          Longitude
+         </li>
+         <li>
+          Resolution
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Photometric Information
+         </strong>
+        </p>
+        <ul>
+         <li>
+          Phase Angle
+         </li>
+         <li>
+          Emission Angle
+         </li>
+         <li>
+          Incidence Angle
+         </li>
+        </ul>
+        <p>
+         <strong>
+          In addition
+         </strong>
+         , this application will return a list of other spacecraft, sun and instrument related information such as:
+        </p>
+        <ul>
+         <li>
+          SpacecraftPosition
+         </li>
+         <li>
+          SpacecraftAzimuth
+         </li>
+         <li>
+          SubSpacecraftLongitude
+         </li>
+         <li>
+          SubSolarLatitude
+         </li>
+         <li>
+          SubSolarLongitude
+         </li>
+         <li>
+          Time information (EphemerisTime, UTC)
+         </li>
+        </ul>
+        <p>
+         Example (not all parameters shown):
+         <br/>
+         <em>
+          Enter lat-
+          <a class="wiki-page" href="fixit.wr.usgs.gov.html">
+          </a>
+         </em>
+         <a class="wiki-page" href="fixit.wr.usgs.gov.html">
+          <em>
+           Ocentric
+          </em>
+          <em>
+          </em>
+         </a>
+         <em>
+          /long-
+          <a class="wiki-page" href="fixit.wr.usgs.gov.html">
+          </a>
+         </em>
+         <a class="wiki-page" href="fixit.wr.usgs.gov.html">
+          <em>
+           360
+          </em>
+          <em>
+          </em>
+         </a>
+         <em>
+          point location
+         </em>
+        </p>
+        <pre>campt from=xxxx.cub latitude=0.0 longitude=270.0 type=ground
+</pre>
+        <p>
+         or
+        </p>
+        <p>
+         Example (not all parameters shown):
+         <br/>
+         <em>
+          Enter line/sample pixel location-current default of application
+         </em>
+        </p>
+        <pre>campt from=xxxx.cub line=512 sample=512 type=image
+</pre>
+        <a name="Phocube">
+        </a>
+        <h3>
+         <strong>
+          Phocube
+         </strong>
+         <a class="wiki-anchor" href="#Phocube">
+          ¶
+         </a>
+        </h3>
+        <p>
+         <a class="external" href="http://isis.astrogeology.usgs.gov/Application/presentation/Tabbed/phocube/phocube.html">
+          <strong>
+           phocube
+          </strong>
+         </a>
+         will compute and generate a separate output
+         <a class="wiki-page" href="Isis_Cube_Format.html">
+          multi-band ISIS3 cube
+         </a>
+         where each band will represent the selected (parameter=TRUE) geometric and photometric elements.  The bands are named appropriately in the output cube labels:
+         <strong>
+          Group=BandBin
+         </strong>
+         .
+        </p>
+        <pre> Object = IsisCube
+     Object = Core
+     StartByte   = 65537
+     Format      = Tile
+     TileSamples = 128
+     TileLines   = 128
+     Group = Dimensions
+       Samples = 1024
+       Lines   = 1024
+       Bands   = 6
+     End_Group
+     Group = Pixels
+       Type       = Real
+       ByteOrder  = Lsb
+       Base       = 0.0
+       Multiplier = 1.0
+     End_Group
+   End_Object
+    Group = BandBin
+    Name = ("Phase Angle", "Emission Angle", "Incidence Angle", "Latitude", "Longitude")
+  End_Group
+</pre>
+        <ul>
+         <li>
+          <strong>
+           phocube
+          </strong>
+          requires a successful
+          <strong>
+           spiceinit
+          </strong>
+          execution
+         </li>
+         <li>
+          <strong>
+           phocube
+          </strong>
+          can be applied to an unprojected "Level1" image cube or an individual map projected "Level2" image.
+         </li>
+         <li>
+          <strong>
+           phocube
+          </strong>
+          will not work on a mosaic cube, the photometric information for each input file is eliminated from the mosaic output file.
+         </li>
+        </ul>
+        <p>
+         Example:
+         <br/>
+         Run
+         <strong>
+          phocube
+         </strong>
+         on a fly-by Cassini ISS-Wide Angle Camera image of Enceladus.  In this example,
+         <strong>
+          phocube
+         </strong>
+         will generate a 6-band output cube.
+        </p>
+        <ul>
+         <li>
+          <strong>
+           NOTE:
+          </strong>
+          The image used in this example has been processed through Level1 [ingestion, spiceinit and radiometric calibration].
+Refer to:
+          <a class="wiki-page" href="Working_with_Cassini_ISS_Data.html">
+           Working with Cassini ISS Data
+          </a>
+         </li>
+        </ul>
+        <p>
+         Each band will contain the information asked for (parameters set to true) in the following command:
+        </p>
+        <pre>phocube from=W1487302209_2.lev1.cub to=W1487302209_2_pho.cub 
+        phase=true  emission=true  incidence=true  latitude=true  longitude=true 
+</pre>
+        <ul>
+         <li>
+          All bands of the phocube output can be displayed in qview
+         </li>
+         <li>
+          To access a selected band in an application, use the cube-attribute syntax.
+          <br/>
+         </li>
+        </ul>
+        <p>
+         For example, calculate and report the average values of the Incidence Angle (Band 3).
+         <br/>
+         The command line for the
+         <strong>
+          stats
+         </strong>
+         applications is as follows:
+        </p>
+        <pre>stats from=W1487302209_2_pho.cub+3  to=W1487302209_2_inc_stats.pvl 
+</pre>
+        <p>
+         The Example ISS Wide-Angle Camera image of Enceladus and the output of
+         <strong>
+          phocube
+         </strong>
+         :
+        </p>
+        <p>
+         <img alt="Cassini ISS WA-camera Enceladus" src="attachments/download/847/Iss_WAC_enceladus_sm2.png"/>
+         <a class="thumbnail" href="attachments/download/877/Iss_WAC_ema_figure.png" title="Phocube-Emission Angle Band)">
+          <img alt="Iss_WAC_ema_figure.png" src="attachments/thumbnail/877/300.png"/>
+         </a>
+         <a class="thumbnail" href="attachments/download/878/Iss_WAC_inc_figure.png" title="Phocube Incidence Angle Band)">
+          <img alt="Iss_WAC_inc_figure.png" src="attachments/thumbnail/878/300.png"/>
+         </a>
+        </p>
+        <p>
+         <a class="thumbnail" href="attachments/download/879/Iss_WAC_phase_figure.png" title="Phocube-Phase Angle Band)">
+          <img alt="Iss_WAC_phase_figure.png" src="attachments/thumbnail/879/300.png"/>
+         </a>
+         <a class="thumbnail" href="attachments/download/880/Iss_WAC_lat_figure.png" title="Phocube-Latitude Band">
+          <img alt="Iss_WAC_lat_figure.png" src="attachments/thumbnail/880/300.png"/>
+         </a>
+         <a class="thumbnail" href="attachments/download/881/Iss_WAC_lon_figure.png" title="Phocube-Longitude Band)">
+          <img alt="Iss_WAC_lon_figure.png" src="attachments/thumbnail/881/300.png"/>
+         </a>
+        </p>
+       </div>
+       <div class="attachments">
+        <div class="contextual">
+        </div>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/847/Iss_WAC_enceladus_sm2.png">
+          Iss_WAC_enceladus_sm2.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/847/Iss_WAC_enceladus_sm2.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (39.4 KB)
+         </span>
+         <span class="author">
+          Kristin Berry, 2016-05-31 12:57 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/877/Iss_WAC_ema_figure.png">
+          Iss_WAC_ema_figure.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/877/Iss_WAC_ema_figure.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (63.6 KB)
+         </span>
+         <span class="author">
+          Kristin Berry, 2016-05-31 01:17 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/878/Iss_WAC_inc_figure.png">
+          Iss_WAC_inc_figure.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/878/Iss_WAC_inc_figure.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (61.2 KB)
+         </span>
+         <span class="author">
+          Kristin Berry, 2016-05-31 01:17 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/879/Iss_WAC_phase_figure.png">
+          Iss_WAC_phase_figure.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/879/Iss_WAC_phase_figure.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (30.9 KB)
+         </span>
+         <span class="author">
+          Kristin Berry, 2016-05-31 01:17 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/880/Iss_WAC_lat_figure.png">
+          Iss_WAC_lat_figure.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/880/Iss_WAC_lat_figure.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (33.6 KB)
+         </span>
+         <span class="author">
+          Kristin Berry, 2016-05-31 01:17 PM
+         </span>
+        </p>
+        <p>
+         <a class="icon icon-attachment" href="attachments/download/881/Iss_WAC_lon_figure.png">
+          Iss_WAC_lon_figure.png
+         </a>
+         <a class="icon-only icon-magnifier" href="attachments/download/881/Iss_WAC_lon_figure.png" title="View">
+          View
+         </a>
+         <span class="size">
+          (43.2 KB)
+         </span>
+         <span class="author">
+          Kristin Berry, 2016-05-31 01:17 PM
+         </span>
+        </p>
+       </div>
+       <div style="clear:both;">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="ajax-indicator" style="display:none;">
+     <span>
+      Loading...
+     </span>
+    </div>
+    <div id="ajax-modal" style="display:none;">
+    </div>
+    <div id="footer">
+     <div class="bgl">
+      <div class="bgr">
+       Powered by
+       <a href="https://www.redmine.org/">
+        Redmine
+       </a>
+       © 2006-2016 Jean-Philippe Lang
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
