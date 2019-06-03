@@ -67,7 +67,7 @@ function loadFooter() {
 var footerHTML = '<div class="icons projects black scroll-wrapper">' +
         '<div class="scroll">' +
 	'<a title="Integrated Software for Imagers and Spectrometers" href="http://isis.astrogeology.usgs.gov" class="icon">' +
-	'<img alt="ISIS Logo" height="112" width="112" src="/fixit/themes/astro/images/logos/isis_2x.jpg"/>' +
+	'<img alt="ISIS Logo" height="112" width="112" src="themes/astro/images/logos/isis_2x.jpg"/>' +
 	'<span class="label">ISIS</span>' +
 	'</a>' +
 	'<a title="Gazetteer of Planetary Nomenclature" href="http://planetarynames.wr.usgs.gov" class="icon">' +
