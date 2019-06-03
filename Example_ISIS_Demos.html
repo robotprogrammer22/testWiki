@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Example ISIS Demos - ISIS - Astrogeology Support and Issue Tracking
+  </title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Redmine" name="description"/>
+  <meta content="issue,bug,tracker" name="keywords"/>
+  <meta content="authenticity_token" name="csrf-param"/>
+  <meta content="Jfwo5xjVA0k15xrng/X+KJ8SINl2SOpzJvziL2Yy4zenHlz0sRMcfs0BsPzwq4InnweQF3GUL31ReGoGajJX7Q==" name="csrf-token"/>
+  <link href="favicon.ico" rel="shortcut icon"/>
+  <link href="stylesheets/jquery/jquery-ui-1.11.0.css" media="all" rel="stylesheet"/>
+  <link href="themes/astro/stylesheets/application.css" media="all" rel="stylesheet"/>
+  <link href="stylesheets/responsive.css" media="all" rel="stylesheet"/>
+  <script src="javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js">
+  </script>
+  <script src="javascripts/application.js">
+  </script>
+  <script src="javascripts/responsive.js">
+  </script>
+  <script>
+   //<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+  </script>
+  <script src="themes/astro/javascripts/theme.js">
+  </script>
+  <link href="plugin_assets/redmine_ldap_sync/stylesheets/ldap_sync.css" media="screen" rel="stylesheet"/>
+  <link href="plugin_assets/redmine_agile/stylesheets/redmine_agile.css" media="screen" rel="stylesheet"/>
+  <script src="plugin_assets/redmine_checklists/javascripts/checklists.js">
+  </script>
+  <link href="plugin_assets/redmine_checklists/stylesheets/checklists.css" media="screen" rel="stylesheet"/>
+  <!-- page specific tags -->
+ </head>
+ <body class="theme-Astro project-isis controller-wiki action-show">
+  <div id="wrapper">
+   <div class="flyout-menu js-flyout-menu">
+    <div class="flyout-menu__search">
+     <form accept-charset="UTF-8" action="projects/isis/search" method="get">
+      <input name="utf8" type="hidden" value="✓"/>
+      <input name="wiki_pages" type="hidden" value="1"/>
+      <label class="search-magnifier search-magnifier--flyout" for="flyout-search">
+       ⚲
+      </label>
+      <input class="small js-search-input" id="flyout-search" name="q" placeholder="Search" type="text"/>
+     </form>
+    </div>
+    <h3>
+     Project
+    </h3>
+    <span class="js-project-menu">
+    </span>
+    <h3>
+     General
+    </h3>
+    <span class="js-general-menu">
+    </span>
+    <span class="js-sidebar flyout-menu__sidebar">
+    </span>
+    <h3>
+     Profile
+    </h3>
+    <span class="js-profile-menu">
+    </span>
+   </div>
+   <div id="wrapper2">
+    <div id="wrapper3">
+     <div id="top-menu">
+      <div id="account">
+       <ul>
+        <li>
+         <a class="login" href="login">
+          Sign in
+         </a>
+        </li>
+        <li>
+         <a class="login-without-cas" href="login_without_cas">
+          Standard Sign In
+         </a>
+        </li>
+       </ul>
+      </div>
+      <ul>
+       <li>
+        <a class="home" href="">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="projects" href="projects">
+         Projects
+        </a>
+       </li>
+       <li>
+        <a class="help" href="https://www.redmine.org/guide">
+         Help
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div id="header">
+      <a class="mobile-toggle-button js-flyout-menu-toggle-button" href="#">
+      </a>
+      <div id="quick-search">
+       <form accept-charset="UTF-8" action="projects/isis/search" method="get">
+        <input name="utf8" type="hidden" value="✓"/>
+        <input name="wiki_pages" type="hidden" value="1"/>
+        <label for="q">
+         <a accesskey="4" href="projects/isis/search">
+          Search
+         </a>
+         :
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text"/>
+       </form>
+      </div>
+      <h1>
+       <span class="current-project">
+        ISIS
+       </span>
+      </h1>
+      <div class="tabs" id="main-menu">
+       <ul>
+        <li>
+         <a class="overview" href="projects/isis">
+          Overview
+         </a>
+        </li>
+        <li>
+         <a class="activity" href="projects/isis/activity">
+          Activity
+         </a>
+        </li>
+        <li>
+         <a class="roadmap" href="projects/isis/roadmap">
+          Roadmap
+         </a>
+        </li>
+        <li>
+         <a class="issues" href="projects/isis/issues">
+          Issues
+         </a>
+        </li>
+        <li>
+         <a class="news" href="projects/isis/news">
+          News
+         </a>
+        </li>
+        <li>
+         <a class="wiki selected" href="projects/isis/wiki">
+          Wiki
+         </a>
+        </li>
+        <li>
+         <a class="boards" href="projects/isis/boards">
+          Forums
+         </a>
+        </li>
+       </ul>
+       <div class="tabs-buttons" style="display:none;">
+        <button class="tab-left" onclick="moveTabLeft(this); return false;">
+        </button>
+        <button class="tab-right" onclick="moveTabRight(this); return false;">
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="" id="main">
+      <div id="sidebar">
+       <h3>
+        Wiki
+       </h3>
+       <ul>
+        <li>
+         <a href="projects/isis/wiki">
+          Start page
+         </a>
+        </li>
+        <li>
+         <a href="projects/isis/wiki/index">
+          Index by title
+         </a>
+        </li>
+        <li>
+         <a href="projects/isis/wiki/date_index">
+          Index by date
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div id="content">
+       <div class="contextual">
+       </div>
+       <p class="breadcrumb">
+        <a href="projects/isis/wiki/Wiki">
+         Wiki
+        </a>
+        »
+        <a href="projects/isis/wiki/ISIS_Online_Workshops">
+         ISIS Online Workshops
+        </a>
+        »
+       </p>
+       <div class="wiki wiki-page">
+        <a name="Example-ISIS-Demos">
+        </a>
+        <h1>
+         Example ISIS Demos
+         <a class="wiki-anchor" href="#Example-ISIS-Demos">
+          ¶
+         </a>
+        </h1>
+        <a name="Image-Data-Size-Calculator">
+        </a>
+        <h2>
+         Image Data Size Calculator
+         <a class="wiki-anchor" href="#Image-Data-Size-Calculator">
+          ¶
+         </a>
+        </h2>
+        <p>
+         <script type="text/javascript">
+          if (typeof window.isisDemosLoaded == 'undefined') {    var isisDemosLoaded = true;    $.getScript("themes/astro/javascripts/easeljs-0.8.1.min.js")       .done( function(s,t) {$.getScript("themes/astro/javascripts/isisDemos.js");});}
+         </script>
+        </p>
+        <div class="app-container" id="isis-image-data-size">
+        </div>
+        <p>
+        </p>
+        <a name="Cube-Demo">
+        </a>
+        <h2>
+         Cube Demo
+         <a class="wiki-anchor" href="#Cube-Demo">
+          ¶
+         </a>
+        </h2>
+        <p>
+         <script type="text/javascript">
+          if (typeof window.isisDemosLoaded == 'undefined') {    var isisDemosLoaded = true;    $.getScript("themes/astro/javascripts/easeljs-0.8.1.min.js")       .done( function(s,t) {$.getScript("themes/astro/javascripts/isisDemos.js");});}
+         </script>
+        </p>
+        <div class="app-container" id="isis-cube">
+        </div>
+        <p>
+        </p>
+        <a name="Pixel-Demo">
+        </a>
+        <h2>
+         Pixel Demo
+         <a class="wiki-anchor" href="#Pixel-Demo">
+          ¶
+         </a>
+        </h2>
+        <p>
+         <script type="text/javascript">
+          if (typeof window.isisDemosLoaded == 'undefined') {    var isisDemosLoaded = true;    $.getScript("themes/astro/javascripts/easeljs-0.8.1.min.js")       .done( function(s,t) {$.getScript("themes/astro/javascripts/isisDemos.js");});}
+         </script>
+        </p>
+        <div class="app-container" id="isis-pixels">
+        </div>
+        <p>
+        </p>
+        <a name="Multiplier-Demo">
+        </a>
+        <h2>
+         Multiplier Demo
+         <a class="wiki-anchor" href="#Multiplier-Demo">
+          ¶
+         </a>
+        </h2>
+        <p>
+         <script type="text/javascript">
+          if (typeof window.isisDemosLoaded == 'undefined') {    var isisDemosLoaded = true;    $.getScript("themes/astro/javascripts/easeljs-0.8.1.min.js")       .done( function(s,t) {$.getScript("themes/astro/javascripts/isisDemos.js");});}
+         </script>
+        </p>
+        <div class="app-container" id="isis-multiplier">
+        </div>
+        <p>
+        </p>
+        <a name="Subpixels-Demo">
+        </a>
+        <h2>
+         Subpixels Demo
+         <a class="wiki-anchor" href="#Subpixels-Demo">
+          ¶
+         </a>
+        </h2>
+        <p>
+         <script type="text/javascript">
+          if (typeof window.isisDemosLoaded == 'undefined') {    var isisDemosLoaded = true;    $.getScript("themes/astro/javascripts/easeljs-0.8.1.min.js")       .done( function(s,t) {$.getScript("themes/astro/javascripts/isisDemos.js");});}
+         </script>
+        </p>
+        <div class="app-container" id="isis-subpixels">
+        </div>
+        <p>
+        </p>
+        <a name="Special-Pixels-Demo">
+        </a>
+        <h2>
+         Special Pixels Demo
+         <a class="wiki-anchor" href="#Special-Pixels-Demo">
+          ¶
+         </a>
+        </h2>
+        <p>
+         <script type="text/javascript">
+          if (typeof window.isisDemosLoaded == 'undefined') {    var isisDemosLoaded = true;    $.getScript("themes/astro/javascripts/easeljs-0.8.1.min.js")       .done( function(s,t) {$.getScript("themes/astro/javascripts/isisDemos.js");});}
+         </script>
+        </p>
+        <div class="app-container" id="isis-special-pixels">
+        </div>
+        <p>
+        </p>
+        <a name="Destripe">
+        </a>
+        <h2>
+         Destripe
+         <a class="wiki-anchor" href="#Destripe">
+          ¶
+         </a>
+        </h2>
+        <p>
+         <script type="text/javascript">
+          if (typeof window.isisDemosLoaded == 'undefined') {    var isisDemosLoaded = true;    $.getScript("themes/astro/javascripts/easeljs-0.8.1.min.js")       .done( function(s,t) {$.getScript("themes/astro/javascripts/isisDemos.js");});}
+         </script>
+        </p>
+        <div class="app-container" id="isis-destripe">
+        </div>
+        <p>
+        </p>
+        <p>
+         ##Seam Removal
+        </p>
+        <p>
+         <script type="text/javascript">
+          if (typeof window.isisDemosLoaded == 'undefined') {    var isisDemosLoaded = true;    $.getScript("themes/astro/javascripts/easeljs-0.8.1.min.js")       .done( function(s,t) {$.getScript("themes/astro/javascripts/isisDemos.js");});}
+         </script>
+        </p>
+        <div class="app-container" id="isis-seams">
+        </div>
+        <p>
+        </p>
+       </div>
+       <div style="clear:both;">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="ajax-indicator" style="display:none;">
+     <span>
+      Loading...
+     </span>
+    </div>
+    <div id="ajax-modal" style="display:none;">
+    </div>
+    <div id="footer">
+     <div class="bgl">
+      <div class="bgr">
+       Powered by
+       <a href="https://www.redmine.org/">
+        Redmine
+       </a>
+       © 2006-2016 Jean-Philippe Lang
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
