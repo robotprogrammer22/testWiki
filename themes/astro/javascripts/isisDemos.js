@@ -2242,7 +2242,7 @@ if (document.getElementById('isis-subpixels') !== null) {
 
 if (document.getElementById('isis-multiplier') !== null) {	
     var l = new staticImage({ 'target':'isis-multiplier',
-			      'src':'/fixit/themes/astro/images/elevation.jpg',
+			      'src':'themes/astro/images/elevation.jpg',
 			      'height':256,
 			      'width':256    
 			    });
