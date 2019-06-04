@@ -1796,24 +1796,24 @@ function makeRadioButton(name, value, text) {
 
 function init() {
     img = new Image();
-    img.src = '/fixit/themes/astro/images/stripe.jpg';
+    img.src = 'themes/astro/images/stripe.jpg';
     
     // inverted image
     imgi = new Image();
     imgi.onload = handleImageLoad;
-    imgi.src = '/fixit/themes/astro/images/stripe-inverted.jpg';
+    imgi.src = 'themes/astro/images/stripe-inverted.jpg';
 }
 
 function initBasic() {
     imgb = new Image();
-    imgb.src = '/fixit/themes/astro/images/stripe.jpg';
+    imgb.src = 'themes/astro/images/stripe.jpg';
     imgh = new Image();
-    imgh.src = '/fixit/themes/astro/images/Striping_Highpass.jpg';
+    imgh.src = 'themes/astro/images/Striping_Highpass.jpg';
     imgl = new Image();
-    imgl.src = '/fixit/themes/astro/images/Striping_Lowpass.jpg';
+    imgl.src = 'themes/astro/images/Striping_Lowpass.jpg';
     imgf = new Image();
     imgf.onload = handleBasicImageLoad;
-    imgf.src = '/fixit/themes/astro/images/Striping_Final.jpg';
+    imgf.src = 'themes/astro/images/Striping_Final.jpg';
 
 }
 
@@ -1876,19 +1876,19 @@ function initSeams() {
     original = new Image();
     grey = new Image();
     
-    area1.src = '/fixit/themes/astro/images/area1.png';
-    area2.src = '/fixit/themes/astro/images/area2.png';
-    area3.src = '/fixit/themes/astro/images/area3.png';
-    area4.src = '/fixit/themes/astro/images/area4.png';
-    mosaic.src = '/fixit/themes/astro/images/mos1234.jpg';
-    area1Base.src = '/fixit/themes/astro/images/area1-base.png';
-    area2Base.src = '/fixit/themes/astro/images/area2-base.png';
-    area3Base.src = '/fixit/themes/astro/images/area3-base.png';
-    area4Base.src = '/fixit/themes/astro/images/area4-base.png';
-    mosaic.src = '/fixit/themes/astro/images/mos1234.jpg';
-    mosaici.src = '/fixit/themes/astro/images/mos1234-inverted.jpg';
-    original.src = '/fixit/themes/astro/images/mos1234.jpg';
-    grey.src = '/fixit/themes/astro/images/grey.png';
+    area1.src = 'themes/astro/images/area1.png';
+    area2.src = 'themes/astro/images/area2.png';
+    area3.src = 'themes/astro/images/area3.png';
+    area4.src = 'themes/astro/images/area4.png';
+    mosaic.src = 'themes/astro/images/mos1234.jpg';
+    area1Base.src = 'themes/astro/images/area1-base.png';
+    area2Base.src = 'themes/astro/images/area2-base.png';
+    area3Base.src = 'themes/astro/images/area3-base.png';
+    area4Base.src = 'themes/astro/images/area4-base.png';
+    mosaic.src = 'themes/astro/images/mos1234.jpg';
+    mosaici.src = 'themes/astro/images/mos1234-inverted.jpg';
+    original.src = 'themes/astro/images/mos1234.jpg';
+    grey.src = 'themes/astro/images/grey.png';
     original.onload = handleSeamsImageLoad;
 
 }
@@ -2274,33 +2274,33 @@ if (document.getElementById('isis-image-data-size') !== null) {
     var formHTML = '<div style="width:100%;"><form name="myForm"><table style="width:100%;background: #eee;margin: auto" ><tr><th colspan="2" ><p>Calculate image data size</p></th></tr><tr><td>Number of lines:<br/><input type="text" name="inLine" size="10"></td><td>Number of samples:<br/><input type="text" name="inSamp" size="10"></td></tr><tr><td colspan="2" align="center">Select bit type:<p><select name="inBit" size="1"><option>8</option><option>16</option><option>32</option></select></p></td></tr><tr><td colspan="2" align="center"><p>Select output units:<br/><select name="outType" size="1"><option value="b">Bytes </option><option value="k">Kilobyte </option><option value="m">Megabyte </option><option value="g">Gigabyte </option></select></p></td></tr><td colspan="2" align="center"><p><input type="button" value="calculate size" onclick="fsize();"></p></td><tr><td colspan="2" align="center"><br><span style="font-weight:bold;line-height:2em;float:left;">The data size is: </span><input style="float:left;width:100px;" type="text" name="answer" size="20"><br></td></tr></table></form></div>';
     document.getElementById('isis-image-data-size').innerHTML = formHTML;
     document.getElementById('isis-image-data-size').setAttribute("style","width:50%");
-    $.getScript("/fixit/themes/astro/javascripts/filesize.js");
+    $.getScript("themes/astro/javascripts/filesize.js");
 }
 
 
 if (document.getElementById("radii-demo") !== null) {
-    $.getScript("/fixit/themes/astro/javascripts/projections.js")
+    $.getScript("themes/astro/javascripts/projections.js")
 	.done(function(script, status) {
 		initRadiiDemo();
 	    });
 }
 	
 if (document.getElementById("longitudes-demo") !== null) {
-    $.getScript("/fixit/themes/astro/javascripts/projections.js")
+    $.getScript("themes/astro/javascripts/projections.js")
 	.done(function(script, status) {
 		initLongitudesDemo();
 	    });
 }
 
 if (document.getElementById("planeto-demo") !== null) {
-    $.getScript("/fixit/themes/astro/javascripts/projections.js")
+    $.getScript("themes/astro/javascripts/projections.js")
 	.done(function(script, status) {
 		initPlanetoDemo();
 	    });
 }
 
 if (document.getElementById("ortho-demo") !== null) {
-    $.getScript("/fixit/themes/astro/javascripts/projections.js")
+    $.getScript("themes/astro/javascripts/projections.js")
 	.done(function(script, status) {
 		initOrtho();
 	    });
