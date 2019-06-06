@@ -37,173 +37,12 @@ $(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved
  </head>
  <body class="theme-Astro project-isis controller-wiki action-show">
   <div id="wrapper">
-   <div class="flyout-menu js-flyout-menu">
-    <div class="flyout-menu__search">
-     <form accept-charset="UTF-8" action="projects/isis/search" method="get">
-      <input name="utf8" type="hidden" value="✓"/>
-      <input name="wiki_pages" type="hidden" value="1"/>
-      <label class="search-magnifier search-magnifier--flyout" for="flyout-search">
-       ⚲
-      </label>
-      <input class="small js-search-input" id="flyout-search" name="q" placeholder="Search" type="text"/>
-     </form>
-    </div>
-    <h3>
-     Project
-    </h3>
-    <span class="js-project-menu">
-    </span>
-    <h3>
-     General
-    </h3>
-    <span class="js-general-menu">
-    </span>
-    <span class="js-sidebar flyout-menu__sidebar">
-    </span>
-    <h3>
-     Profile
-    </h3>
-    <span class="js-profile-menu">
-    </span>
-   </div>
    <div id="wrapper2">
     <div id="wrapper3">
-     <div id="top-menu">
-      <div id="account">
-       <ul>
-        <li>
-         <a class="login" href="login">
-          Sign in
-         </a>
-        </li>
-        <li>
-         <a class="login-without-cas" href="login_without_cas">
-          Standard Sign In
-         </a>
-        </li>
-       </ul>
-      </div>
-      <ul>
-       <li>
-        <a class="home" href="">
-         Home
-        </a>
-       </li>
-       <li>
-        <a class="projects" href="projects">
-         Projects
-        </a>
-       </li>
-       <li>
-        <a class="help" href="https://www.redmine.org/guide">
-         Help
-        </a>
-       </li>
-      </ul>
-     </div>
-     <div id="header">
-      <a class="mobile-toggle-button js-flyout-menu-toggle-button" href="#">
-      </a>
-      <div id="quick-search">
-       <form accept-charset="UTF-8" action="projects/isis/search" method="get">
-        <input name="utf8" type="hidden" value="✓"/>
-        <input name="wiki_pages" type="hidden" value="1"/>
-        <label for="q">
-         <a accesskey="4" href="projects/isis/search">
-          Search
-         </a>
-         :
-        </label>
-        <input accesskey="f" class="small" id="q" name="q" size="20" type="text"/>
-       </form>
-      </div>
-      <h1>
-       <span class="current-project">
-        ISIS
-       </span>
-      </h1>
-      <div class="tabs" id="main-menu">
-       <ul>
-        <li>
-         <a class="overview" href="projects/isis">
-          Overview
-         </a>
-        </li>
-        <li>
-         <a class="activity" href="projects/isis/activity">
-          Activity
-         </a>
-        </li>
-        <li>
-         <a class="roadmap" href="projects/isis/roadmap">
-          Roadmap
-         </a>
-        </li>
-        <li>
-         <a class="issues" href="projects/isis/issues">
-          Issues
-         </a>
-        </li>
-        <li>
-         <a class="news" href="projects/isis/news">
-          News
-         </a>
-        </li>
-        <li>
-         <a class="wiki selected" href="projects/isis/wiki">
-          Wiki
-         </a>
-        </li>
-        <li>
-         <a class="boards" href="projects/isis/boards">
-          Forums
-         </a>
-        </li>
-       </ul>
-       <div class="tabs-buttons" style="display:none;">
-        <button class="tab-left" onclick="moveTabLeft(this); return false;">
-        </button>
-        <button class="tab-right" onclick="moveTabRight(this); return false;">
-        </button>
-       </div>
-      </div>
-     </div>
      <div class="" id="main">
-      <div id="sidebar">
-       <h3>
-        Wiki
-       </h3>
-       <ul>
-        <li>
-         <a href="projects/isis/wiki">
-          Start page
-         </a>
-        </li>
-        <li>
-         <a href="projects/isis/wiki/index">
-          Index by title
-         </a>
-        </li>
-        <li>
-         <a href="projects/isis/wiki/date_index">
-          Index by date
-         </a>
-        </li>
-       </ul>
-      </div>
       <div id="content">
        <div class="contextual">
        </div>
-       <p class="breadcrumb">
-        <a href="projects/isis/wiki/Wiki">
-         Wiki
-        </a>
-        »
-        <a href="projects/isis/wiki/ISIS_Online_Workshops">
-         ISIS Online Workshops
-        </a>
-        »
-       </p>
        <div class="wiki wiki-page">
         <a name="Core-Base-and-Multiplier">
         </a>
@@ -953,24 +792,6 @@ $(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved
        </div>
        <div style="clear:both;">
        </div>
-      </div>
-     </div>
-    </div>
-    <div id="ajax-indicator" style="display:none;">
-     <span>
-      Loading...
-     </span>
-    </div>
-    <div id="ajax-modal" style="display:none;">
-    </div>
-    <div id="footer">
-     <div class="bgl">
-      <div class="bgr">
-       Powered by
-       <a href="https://www.redmine.org/">
-        Redmine
-       </a>
-       © 2006-2016 Jean-Philippe Lang
       </div>
      </div>
     </div>
